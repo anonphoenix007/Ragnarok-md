@@ -1,13 +1,13 @@
 FROM quay.io/sampandey001/secktor
 
-RUN git clone https://github.com/Astropeda/Asta-Md /root/Astropeda
+RUN git clone https://github.com/anonphoenix007/Ragnarok-MD /root/Ragnarok-md
 
 # Clear npm cache and remove node_modules directories
 RUN npm cache clean --force
-RUN rm -rf /root/Astropeda/node_modules
+RUN rm -rf /root/Ragnarok-md/node_modules
 
 # Install dependencies
-WORKDIR /root/Astropeda
+WORKDIR /root/Ragnarok-md
 RUN npm install
 
 # Add additional Steps To Run...
