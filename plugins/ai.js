@@ -300,7 +300,7 @@ const {
       }
     }
   );
-  smd({
+/*  smd({
     pattern: "gpt4",
     category: "ai",
     desc: "Chat with GPT-4 AI model",
@@ -387,7 +387,7 @@ const {
         );
       }
     }
-  );
+  );*/
   smd(
     {
       pattern: "chat",
@@ -639,7 +639,7 @@ const {
       this.howmanyreply = 0;
     }
   }
-  smd(
+/*  smd(
     {
       pattern: "anonymsg",
       alias: ["recognition", "anonychat"],
@@ -1076,5 +1076,5 @@ const {
         await message.error(error + "\n\nCommand: blackbox", error, "*Failed to fetch information from Blackbox.*");
       }
     }
-  );
+  );*/
   
