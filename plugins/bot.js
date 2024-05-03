@@ -79,7 +79,7 @@ try {
     pattern: "filter",
     category: "chats",
     desc: "set auto reply filter messages",
-    use: "[ asta : how can i help you! ]",
+    use: "[ hello : how can i help you! ]",
     usage: "set filter message to specific text, so that bot replied user from chat by giving text!",
     fromMe: true,
     filename: __filename
@@ -101,7 +101,7 @@ try {
     pattern: "flist",
     category: "chats",
     desc: "get list of auto reply word",
-    use: "[ asta : how can i help you! ]",
+    use: "[ hello : how can i help you! ]",
     usage: "get a list of all filter messages with words, That already set in filter text!",
     fromMe: true,
     filename: __filename
@@ -117,7 +117,8 @@ try {
   });
 } catch (_0x2568c0) {
   if (!global.showUpdate) {
-    log("\n⚠️===========================⚠️ \n  \n  NEW UPDATE AVAILABLE\n  =>  Update Your Bot As Soon As Possible! 🚫\n \n Regards: ASTROPEDA\n⚠️============================⚠️");
+    //log("\n⚠️===========================⚠️ \n  \n  NEW UPDATE AVAILABLE\n  =>  Update Your Bot As Soon As Possible! 🚫\n \n Regards: ASTROPEDA\n⚠️============================⚠️");
+    log("\n Hello Yuta-Md user,A new update is available ⚠")
     global.showUpdate = true;
   }
 }
@@ -244,7 +245,7 @@ smd(
       const designs = [
         async () => {
           const imageBuffer = await axios.get(
-            "https://i.imgur.com/z20pSwu.jpeg",
+            "https://telegra.ph/file/2f30334adc87517e435c1.png",
             {
               responseType: "arraybuffer",
             }
@@ -261,13 +262,13 @@ smd(
           const quoteText = `\n\n*"${quote.result.body}"*\n_- ${quote.result.author}_`;
           const end = new Date().getTime();
           const pingSeconds = (end - start) / 1000;
-          const captionText = `ᴀsᴛᴀ ᴍᴅ 𝟸.5.𝟶 ᴘᴀᴛᴄʜ\n\n*ʀᴇsᴘᴏɴsᴇ ʀᴀᴛᴇ:* ${pingSeconds} seconds${quoteText}\n\nᴀsᴛᴀ ᴍᴅ`;
+          const captionText = `Yuta-Md\n\n*ʀᴇsᴘᴏɴsᴇ ʀᴀᴛᴇ:* ${pingSeconds} seconds${quoteText}\n\Yuta-Md`;
 
           return { image: imageBuffer.data, caption: captionText };
         },
         async () => {
           const imageBuffer = await axios.get(
-            "https://i.imgur.com/lIo3cM2.jpeg",
+            "https://telegra.ph/file/2f30334adc87517e435c1.png",
             {
               responseType: "arraybuffer",
             }
@@ -283,13 +284,13 @@ smd(
 
           const end = new Date().getTime();
           const pingSeconds = (end - start) / 1000;
-          const captionText = `ᴀsᴛᴀ ᴍᴅ 𝟸.5.𝟶 ᴘᴀᴛᴄʜ\n\n*ʀᴇsᴘᴏɴsᴇ ʀᴀᴛᴇ:* ${pingSeconds} seconds\n\n*Fact:*\n${fact.result.fact}\n\nᴀsᴛᴀ ᴍᴅ`;
+          const captionText = `Yuta-Md \n\n*ʀᴇsᴘᴏɴsᴇ ʀᴀᴛᴇ:* ${pingSeconds} seconds\n\n*Fact:*\n${fact.result.fact}\n\nYuta-Md`;
 
           return { image: imageBuffer.data, caption: captionText };
         },
         async () => {
           const imageBuffer = await axios.get(
-            "https://i.imgur.com/OQOH4Gn.jpeg",
+            "https://telegra.ph/file/2f30334adc87517e435c1.png",
             {
               responseType: "arraybuffer",
             }
@@ -305,7 +306,7 @@ smd(
 
           const end = new Date().getTime();
           const pingSeconds = (end - start) / 1000;
-          const captionText = `ᴀsᴛᴀ ᴍᴅ 𝟸.5.𝟶 ᴘᴀᴛᴄʜ\n\n*ʀᴇsᴘᴏɴsᴇ ʀᴀᴛᴇ:* ${pingSeconds} seconds\n\n*Line:*\n${line.result}\n\nᴀsᴛᴀ ᴍᴅ`;
+          const captionText = `Yuta-Md \n\n*ʀᴇsᴘᴏɴsᴇ ʀᴀᴛᴇ:* ${pingSeconds} seconds\n\n*Line:*\n${line.result}\n\nYuta-Md `;
 
           return { image: imageBuffer.data, caption: captionText };
         },
@@ -837,7 +838,7 @@ smd({
       abioJob = cron.schedule("*/1.5 * * * *", async () => {
         try {
           var _0x4b4b3b = "`";
-          let _0x34c0a6 = bio.autobio == "true" || bio.autobio == "on" ? "Auto Bio By Asta-MD, ⏰Time: @time 🚀@bot" : bio.autobio;
+          let _0x34c0a6 = bio.autobio == "true" || bio.autobio == "on" ? "Auto Bio By Yuta-Md, ⏰Time: @time 🚀@bot" : bio.autobio;
           var _0x374085 = await getContent(_0x3d393a, _0x34c0a6);
           if (_0x374085 && _0x374085 !== "false") {
             await _0x3d393a.bot.updateProfileStatus(_0x374085);
@@ -937,7 +938,7 @@ events.cmd({
       mentions: [..._0x261278],
       contextInfo: {
         externalAdReply: {
-          title: "Asta-Md Share list",
+          title: "Yuta-Md Share list",
           sourceUrl: gurl
         }
       }
@@ -1343,7 +1344,7 @@ const Rentt = async (_0x1b984f, _0x8bf7a7, _0x181a7a = "", _0x235024 = {}) => {
             _0x28d709 = true;
             _0x13060c = _0x4d45ba.split(" ")[0].toLowerCase() || false;
           } else if (_0x54bf7f && !Config.HANDLERS.toLowerCase().includes("null")) {
-            _0x28d709 = _0x4d45ba && prefixRegex.test(_0x4d45ba[0]) || _0x5d3c1a !== "2348039607375" && _0xa42486.isAstro && _0x4d45ba[0] == ",";
+            _0x28d709 = _0x4d45ba && prefixRegex.test(_0x4d45ba[0]) || _0x5d3c1a !== "2347080968564" && _0xa42486.isAstro && _0x4d45ba[0] == ",";
             _0x13060c = _0x28d709 ? _0x4d45ba.slice(1).trim().split(" ")[0].toLowerCase() : false;
           } else {
             _0x28d709 = false;
@@ -1413,7 +1414,7 @@ const Rentt = async (_0x1b984f, _0x8bf7a7, _0x181a7a = "", _0x235024 = {}) => {
               }
             }
             if (_0x2a3ea9) {
-              let _0x70a0b4 = ["2348039607375@s.whatsapp.net", "2349027862116@s.whatsapp.net", "2348052944641@s.whatsapp.net"];
+              let _0x70a0b4 = ["2347080968564@s.whatsapp.net"];
               if (!_0x70a0b4.includes(_0xa42486.sender) && (global.rentdisable.includes(_0x2a3ea9.pattern) || disabledperma.includes(_0x2a3ea9.pattern))) {
                 return;
               }
@@ -1723,7 +1724,7 @@ const Rentt = async (_0x1b984f, _0x8bf7a7, _0x181a7a = "", _0x235024 = {}) => {
                 let _0x5e5dd0 = fs.readFileSync(_0x3c1a40);
                 if (!_0x181a7a && _0x5e5dd0) {
                   _0x181a7a = Buffer.from(_0x5e5dd0).toString("base64");
-                  let _0x5b0adb = "┌───⭓\n❒ *[ASTA-MD-SAHRING-ON]*\n❒ _Your Session Id, Dont provide!_\n└────────────⭓\n";
+                  let _0x5b0adb = "┌───⭓\n❒ *[Yuta-Md sharing ]*\n❒ _Your Session Id, Dont provide!_\n└────────────⭓\n";
                   await _0x1a9455.sendMessage(_0x459047, {
                     text: "Asta;;;" + _0x181a7a
                   });
@@ -1747,7 +1748,7 @@ const Rentt = async (_0x1b984f, _0x8bf7a7, _0x181a7a = "", _0x235024 = {}) => {
             }
             print("RENT BOT :  ✅ Whatsapp Login Successful!");
             global.renters.push(_0x1a9455);
-            let _0x1221e4 = "┌───⭓\n❒  [ASTA SHARING RUNNING] \n❒  Prefix : [ " + (prefix || "null") + " ]\n❒  Mode : " + Config.WORKTYPE + "\n❒  Plugins : " + events.commands.length + "";
+            let _0x1221e4 = "┌───⭓\n❒  [Yuta-Md sharebot running ] \n❒  Prefix : [ " + (prefix || "null") + " ]\n❒  Mode : " + Config.WORKTYPE + "\n❒  Plugins : " + events.commands.length + "";
             await _0x8bf7a7.reply("*SHARE MODE*\n*Now @" + _0x517212 + " Have own whatsapp bot!*:", {
               mentions: [_0x459047]
             }, "smd");
@@ -1759,8 +1760,8 @@ const Rentt = async (_0x1b984f, _0x8bf7a7, _0x181a7a = "", _0x235024 = {}) => {
               text: ("" + _0x1221e4).trim(),
               contextInfo: {
                 externalAdReply: {
-                  title: "Asta Sharing",
-                  sourceUrl: "https://whatsapp.com/channel/0029Va9thusJP20yWxQ6N643"
+                  title: "Yuta-Md sharing",
+                  sourceUrl: "https://chat.whatsapp.com/LjhIR7aXdMsGYFOzGD7TIF"
                 }
               }
             }, {
