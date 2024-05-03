@@ -64,8 +64,8 @@ smd(
       isForwarded: true,
     };
 
-    await message.send(SupportMsg, { contextInfo });
-     //await reply(supportMsg)
+    //await message.send(SupportMsg, { contextInfo });
+     await citel.reply(supportMsg)
   }
 );
 /* smd({
