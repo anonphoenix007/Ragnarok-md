@@ -4,10 +4,10 @@ RUN git clone https://github.com/anonphoenix007/Ragnarok-MD /root/Anonphoenix007
 
 # Clear npm cache and remove node_modules directories
 RUN npm cache clean --force
-RUN rm -rf /root/Ragnarok-md/node_modules
+RUN rm -rf /root/Anonphoenix007/node_modules
 
 # Install dependencies
-WORKDIR /root/Ragnarok-md
+WORKDIR /root/Anonphoenix007
 RUN npm install
 
 # Add additional Steps To Run...
