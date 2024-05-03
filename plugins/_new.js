@@ -57,18 +57,18 @@ smd(
     filename: __filename,
   },
   async (message) => {
-    const SupportMsg = `Hello dear user 👤 ,Thanks for using my bot 🤗\n\nJoin my channel https://whatsapp.com/channel/0029VaY0Zq32P59piTo5rg0K`;
+    const SupportMsg = `\n\nJoin my support group https://chat.whatsapp.com/LjhIR7aXdMsGYFOzGD7TIF`;
 
     const contextInfo = {
       forwardingScore: 999,
       isForwarded: true,
     };
 
-    //await message.send(SupportMsg, { contextInfo });
-     await reply(supportMsg)
+    await message.send(SupportMsg, { contextInfo });
+     //await reply(supportMsg)
   }
 );
- smd({
+/* smd({
    cmdname: "listmessage",
    alias: ["countmessage", "msgcount"],
    desc: "Check how many users continuesly active in chat!",
@@ -650,4 +650,4 @@ smd(
      console.log(_0x47924e);
      return null;
    }
- };
+ };*/
