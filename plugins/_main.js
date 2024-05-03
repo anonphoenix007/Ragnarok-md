@@ -146,7 +146,7 @@ smd({
     try {
       let _0x557719 = _0x302ad5 ? _0x302ad5 : bot.reply_text;
       if (!_0x557719) {
-        return man.reply("Provide me a query ex Who is Suhail");
+        return man.reply("Provide me a query ex Who is Yuta");
       }
       const _0x50c8d3 = await fetch("https://aemt.me/openai?text=" + _0x557719);
       const _0x14c9d6 = await _0x50c8d3.json();
@@ -541,7 +541,7 @@ smd({
     await _0x51c639.error(_0x102a1d + "\n\ncommand: cpu", _0x102a1d, "*_No responce from Server side, Sorry!!_*");
   }
 });
-smd({
+/*smd({
   pattern: "advt",
   alias: ["advertisement"],
   category: "ai",
@@ -723,7 +723,7 @@ smd({
       }
     }
   } catch {}
-});
+});*/
 smd({
   pattern: "aitts",
   desc: "Text to Voice Using Eleven Lab Ai",
