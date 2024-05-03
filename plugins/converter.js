@@ -82,7 +82,7 @@ smd({
     }
     let _0x44d3dd = _0x3febcd.split("|");
     let _0x47c982 = _0x44d3dd[0]?.trim() !== "" ? _0x44d3dd[0] : _0x471740.pushName;
-    let _0x20f704 = _0x44d3dd[1] && _0x44d3dd[1] !== "" ? _0x44d3dd[1] : "ᴀsᴛᴀ-ᴍᴅ ♥️";
+    let _0x20f704 = _0x44d3dd[1] && _0x44d3dd[1] !== "" ? _0x44d3dd[1] : "Yuta-Md";
     let _0x3ab776 = await _0xad98fb.download();
     let _0x3d0871 = {
       pack: _0x47c982,
@@ -352,7 +352,7 @@ smd({
     return await _0xa1cfa2.error(_0x5094b6 + "\n\ncmdName: emix", _0x5094b6);
   }
 });
-smd({
+/*smd({
   pattern: "fancy",
   desc: "Makes stylish/fancy given text",
   category: "converter",
@@ -360,7 +360,7 @@ smd({
   filename: __filename
 }, async (_0x230c03, _0x3b568a) => {
   try {
-    let _0x365550 = "┏━━━━━━━━━━━━━━━━━━━━━━━━\n┃\t*💬ASTA-MD_FANCY_TEXT💬* \n┗━━━━━━━━━━━━━━━━━━━━━━━━\n\n " + (_0x3b568a ? "```🔢Reply the number you wants to select``` \n\n" : "```\t\t" + prefix + "fancy Asta(For all text)\n\t\t" + prefix + "fancy 25 Asta(For specific text)```\n\n");
+    let _0x365550 = "┏━━━━━━━━━━━━━━━━━━━━━━━━\n┃\t*💬Yuta-Md text gen💬* \n┗━━━━━━━━━━━━━━━━━━━━━━━━\n\n " + (_0x3b568a ? "```🔢Reply the number you wants to select``` \n\n" : "```\t\t" + prefix + "fancy Yuta-Md(For all text)\n\t\t" + prefix + "fancy 25 Asta(For specific text)```\n\n");
     let _0x50c7d9 = parseInt(_0x3b568a);
     if (isNaN(_0x50c7d9)) {
       let _0x4ca942 = _0x3b568a ? _0x3b568a : "Asta";
@@ -380,7 +380,7 @@ smd({
   } catch (_0x8dd389) {
     return await _0x230c03.error(_0x8dd389 + "\n\ncmdName: fancy", _0x8dd389);
   }
-});
+});*/
 smd({
   pattern: "tiny",
   desc: "Makes url tiny.",
