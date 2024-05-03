@@ -11,7 +11,25 @@ let {
  const speed = require("performance-now");
  const Config = require("../config");
  const cheerio = require("cheerio");
- smd(
+const reply = (teks) => {
+client.bot.sendMessage(citel.chat,
+{ text: teks,
+contextInfo:{
+mentionedJid:[citel.sender],
+forwardingScore: 9999999,
+isForwarded: true, 
+"externalAdReply": {
+"showAdAttribution": true,
+"containsAutoReply": true,
+"title": `MD-WABOT`,
+"body": `${global.OwnerName}`,
+"previewType": "PHOTO",
+"thumbnailUrl": ``,
+"thumbnail": fs.readFileSync(`../Assets/ragnarok.jpg`),
+"sourceUrl": `https://whatsapp.com/channel/0029VaY0Zq32P59piTo5rg0K`}}},
+{ quoted: citel})
+	  } 
+/* smd(
   {
     pattern: "channel",
     desc: "To check ping",
@@ -29,7 +47,7 @@ let {
 
     await message.send(channelMessage, { contextInfo });
   }
-);
+);*/
 smd(
   {
     pattern: "support",
@@ -39,14 +57,15 @@ smd(
     filename: __filename,
   },
   async (message) => {
-    const SupportMsg = `𝘼𝙎𝙏𝘼 𝙈𝘿 𝙎𝙐𝙋𝙋𝙊𝙍𝙏 𝙂𝙧𝙤𝙪𝙥\n\n *ʟɪɴᴋ:* https://chat.whatsapp.com/GzKCborGlGN41XSHtslLri\n\n ${Config.botname} *WORKS*`;
+    const SupportMsg = `Hello dear user 👤 ,Thanks for using my bot 🤗\n\nJoin my channel https://whatsapp.com/channel/0029VaY0Zq32P59piTo5rg0K`;
 
     const contextInfo = {
       forwardingScore: 999,
       isForwarded: true,
     };
 
-    await message.send(SupportMsg, { contextInfo });
+    //await message.send(SupportMsg, { contextInfo });
+     await reply(supportMsg)
   }
 );
  smd({
