@@ -1,4 +1,4 @@
-let { smd, textToLogoGenerator, prefix } = require(lib_dir);
+/*let { smd, textToLogoGenerator, prefix } = require(lib_dir);
 let pubg = {
   type: "pubg",
   info: "create pubg text logo.",
@@ -49,4 +49,4 @@ smd({ cmdname: "pubg7", ...pubg }, async (message, match, { cmdName }) => {
   } catch (e) {
     return await message.error(`${e}\n\ncmdName: ${cmdName}`, e);
   }
-});
+});*/
