@@ -351,11 +351,10 @@ ${menuThemeFooter}
       menuText += Config.caption;
 
       const messageOptions = {
-        caption: menuText,
-        ephemeralExpiration: 30,
+        caption: menuText
       };
-      //return await m.bot.sendMessage(message.chat, menuText);
-      return await _0x5d887.reply(messageText)
+      return await Void.sendMessage(message.chat, menuText);
+      //return await _0x5d887.reply(messageText)
     } catch (error) {
       await message.error(error + "\nCommand: menu", error);
     }
