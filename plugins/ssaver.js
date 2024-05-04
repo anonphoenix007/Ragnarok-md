@@ -115,7 +115,7 @@ smd({ on: "status" }, async (message, text) => {
   }
 });
 
-smd(
+/*smd(
   {
     cmdname: "asta",
     desc: "total Users Currently using asta",
@@ -128,4 +128,4 @@ smd(
       message.reply(`*ERROR!* `);
     }
   }
-);
+);*/
