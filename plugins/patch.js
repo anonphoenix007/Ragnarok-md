@@ -354,7 +354,7 @@ ${menuThemeFooter}
         caption: menuText
       };
       //return await Void.sendMessage(message.chat, menuText);
-      return await message.send(message.chat, menuText)
+      return await message.send(menuText)
     } catch (error) {
       await message.error(error + "\nCommand: menu", error);
     }
