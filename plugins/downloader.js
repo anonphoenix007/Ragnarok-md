@@ -75,7 +75,7 @@ const {
 *Followers:* ${followers}
 *Following:* ${following}
 
-\t*ASTA IG STALKER*
+\t*Yuta-Md stalker IG*
 `;
 
       await m.bot.sendFromUrl(m.from, photo_profile, caption, m, {}, "image");
@@ -234,7 +234,7 @@ smd(
     }
   }
 );
-smd(
+/*smd(
   {
     pattern: "ipstalk",
     desc: "Get information about an IP address.",
@@ -527,7 +527,7 @@ smd(
    const minutes = Math.floor((durationMs / (1000 * 60)) % 60);
    const hours = Math.floor((durationMs / (1000 * 60 * 60)) % 24);
    return `${hours ? `${hours}h ` : ""}${minutes}m ${seconds}s`;
- }
+ }*/
  smd(
    {
      pattern: "twitter",
@@ -821,7 +821,7 @@ smd(
      }
    }
  );
- smd(
+/* smd(
    {
      pattern: "snack",
      desc: "Downloads Snack videos.",
@@ -851,7 +851,7 @@ smd(
        await message.reply("*An error occurred while downloading the video.*");
      }
    }
- );
+ );*/
  smd(
    {
      pattern: "wikimedia",
@@ -943,7 +943,7 @@ smd(
      }
    }
  );
- smd(
+/* smd(
    {
      pattern: "facebook2",
      alias: ["fbhd"],
@@ -988,7 +988,7 @@ smd(
        );
      }
    }
- );
+ );*/
  smd({
    pattern: "apk",
    alias: ["modapk"],
@@ -1085,7 +1085,7 @@ smd(
      _0x19d516.error(_0xa7fd60 + "\n\ncommand: apks", _0xa7fd60);
    }
  });
- smd(
+/* smd(
    {
      pattern: "soundcloud",
      alias: ["scdl", "scdownload"],
@@ -1134,7 +1134,7 @@ smd(
        );
      }
    }
- );
+ );*/
  smd(
    {
      pattern: "gitclone",
@@ -1152,7 +1152,7 @@ smd(
          : "";
        if (!_0x1c586e) {
          return await _0x1ae8f8.reply(
-           "*Provide Repo Url, _.gitclone https://github.com/Astropeda/Asta-Md_*"
+           "*Provide Repo Url, _.gitclone https://github.com/KaiEzra/Yuta-Md_*"
          );
        }
        const _0x5906ab =
@@ -1202,7 +1202,7 @@ smd(
    try {
      let _0x204f81 = _0x55aba2.reply_text ? _0x55aba2.reply_text : _0x56da6b;
      if (!_0x204f81) {
-       return _0x55aba2.reply("*_Example : .tts Hi,I am Asta-Md whatsapp bot._*");
+       return _0x55aba2.reply("*_Example : .tts Hi,I am Yuta-Md whatsapp bot._*");
      }
      try {
        let _0x1974d5 = _0x56da6b ? _0x56da6b.split(" ")[0].toLowerCase() : "en";
@@ -1233,7 +1233,7 @@ smd(
          },
          mimetype: "audio/mpeg",
          ptt: true,
-         fileName: "Asta-Md-tts.m4a"
+         fileName: "Yuta-Md-tts.m4a"
        }, {
          quoted: _0x55aba2
        });
@@ -1271,7 +1271,7 @@ smd(
      await _0x272f8d.error(_0x2306b6 + "\n\ncommand : downmp4", _0x2306b6, "*_Please, Give me valid video url!_*");
    }
  });
- smd(
+/* smd(
    {
      pattern: "video2",
      desc: "Downloads video from YouTube using yt-search.",
@@ -1343,7 +1343,7 @@ smd(
      console.error("Video search error:", error);
    }
    return false;
- }
+ }*/
  smd({
    pattern: "play",
    alias: ["music"],
@@ -1420,7 +1420,7 @@ smd(
      };
      let _0x4737bb = {
        audio: _0x2ba501,
-       fileName: "Asta-Md tiktok Sound" + _0x19c223 + ".m4a",
+       fileName: "Yuta-Md tiktok Sound" + _0x19c223 + ".m4a",
        mimetype: "audio/mpeg",
        ptt: true,
        contextInfo: _0x29fdd9
@@ -1482,7 +1482,7 @@ smd(
      }
    }
  );
- smd(
+/* smd(
    {
      pattern: "tiktok2",
      desc: "Downloads Tiktok Videos Via Url.",
@@ -1530,7 +1530,7 @@ smd(
        return message.error(`${error}\n\ncommand: tiktok`, error);
      }
    }
- );
+ );*/
  smd({
    pattern: "ringtone",
    desc: "Downloads ringtone.",
@@ -1680,7 +1680,7 @@ smd(
      }
      let _0x3b2ca6 = await yts(_0x4ec99f);
      let _0x4123ae = _0x3b2ca6.all[0];
-     let _0x5883a9 = "\t *ᴀsᴛᴀ-ᴍᴅ • sᴏɴɢ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ*   \n\n*Title :* " + _0x4123ae.title + "\nUrl : " + _0x4123ae.url + "\n*Description :* " + _0x4123ae.timestamp + "\n*Views :* " + _0x4123ae.views + "\n*Uploaded :* " + _0x4123ae.ago + "\n*Author :* " + _0x4123ae.author.name + "\n\n\n_Reply 1 To Video_ Or _1 document_\n_Reply 2 To Audio_ Or _2 document_";
+     let _0x5883a9 = "\t *Yuta-Md • sᴏɴɢ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ*   \n\n*Title :* " + _0x4123ae.title + "\nUrl : " + _0x4123ae.url + "\n*Description :* " + _0x4123ae.timestamp + "\n*Views :* " + _0x4123ae.views + "\n*Uploaded :* " + _0x4123ae.ago + "\n*Author :* " + _0x4123ae.author.name + "\n\n\n_Reply 1 To Video_ Or _1 document_\n_Reply 2 To Audio_ Or _2 document_";
      let _0x3885cc = await smdBuffer(_0x4123ae.thumbnail);
      var _0x44a363 = {
        ...(await _0x2c2023.bot.contextInfo(Config.botname, "ʏᴏᴜᴛᴜʙᴇ ꜱᴏɴɢ", _0x3885cc))
@@ -1707,7 +1707,7 @@ smd(
        return await _0x1c8285.reply("*_Give Me Search Query!_*");
      }
      let _0x2878ec = await yts(_0xca939c);
-     let _0x4186e4 = "*ᴀsᴛᴀ-ᴍᴅ • ʏᴏᴜᴛᴜʙᴇ ᴅᴏᴡɴʟᴏᴀᴅ* \n*_______________________________* \n\n_Reply Any Number To Download._\n  _For Audio: 1 mp3._\n  _For Video: 1 video._\n  _For document: 1 document._\n\n_Results For : " + _0xca939c + "_ \n\n";
+     let _0x4186e4 = "*Yuta-Md • ʏᴏᴜᴛᴜʙᴇ ᴅᴏᴡɴʟᴏᴀᴅ* \n*_______________________________* \n\n_Reply Any Number To Download._\n  _For Audio: 1 mp3._\n  _For Video: 1 video._\n  _For document: 1 document._\n\n_Results For : " + _0xca939c + "_ \n\n";
      let _0x463366 = 1;
      for (let _0x308e22 of _0x2878ec.all) {
        _0x4186e4 += " \n*" + _0x463366++ + " : " + _0x308e22.title + (_0x308e22.timestamp ? "(" + _0x308e22.timestamp + ")" : "") + "*\n*Url : " + _0x308e22.url + "*";
@@ -1804,7 +1804,7 @@ smd(
      }
    }
  });
- smd({ pattern: "threads", category: "downloader", filename: __filename, desc: "Download media from Threads." }, async (m, text) => {
+/* smd({ pattern: "threads", category: "downloader", filename: __filename, desc: "Download media from Threads." }, async (m, text) => {
    try {
      if (!text) return await m.send("*_Please provide a Threads link_*");
  
@@ -1834,7 +1834,8 @@ smd(
    } catch (error) {
      await m.error(error + "\n\ncommand: threads", error, "*_No responce from API, Sorry!!_*");
    }
- });
+ });*/
+
  smd({ pattern: "instagram", category: "downloader", filename: __filename, desc: "Download Instagram media." }, async (m, text) => {
    try {
      if (!text) return await m.send("*_Please provide an Instagram link_*");
@@ -1974,7 +1975,7 @@ smd(
          url: _0x59bbaa
        },
        mimetype: "audio/mpeg",
-       fileName: "Asta-Md--" + _0x1d542b[1] + ".mp3",
+       fileName: "Yuta-Md--" + _0x1d542b[1] + ".mp3",
        caption: Config.caption,
        contextInfo: _0x10e2fa
      };
@@ -1995,7 +1996,7 @@ smd(
  }) => {
    if (_0xb75e78.quoted && _0xb75e78.text) {
      const _0x5b8ee5 = _0xb75e78.quoted.text.split("\n");
-     if (_0x5b8ee5[0].includes("ᴀsᴛᴀ-ᴍᴅ • sᴏɴɢ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ")) {
+     if (_0x5b8ee5[0].includes("Yuta-Md • sᴏɴɢ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ")) {
        const _0x1724ba = _0x5b8ee5.find(_0x525632 => _0x525632.startsWith("Url :"));
        let _0x43a95e = _0x1724ba.replace("Url :", "").trim();
        try {
@@ -2048,7 +2049,7 @@ smd(
        } catch (_0x189dd8) {
          return await _0xb75e78.reply("Error While Downloading Video : " + _0x189dd8);
        }
-     } else if (_0x5b8ee5[0].includes("ᴀsᴛᴀ-ᴍᴅ • ʏᴏᴜᴛᴜʙᴇ ᴅᴏᴡɴʟᴏᴀᴅ")) {
+     } else if (_0x5b8ee5[0].includes("Yuta-Md • ʏᴏᴜᴛᴜʙᴇ ᴅᴏᴡɴʟᴏᴀᴅ")) {
        let _0x307bb6 = "*" + _0xb75e78.text.split(" ")[0] + " : ";
        const _0x56275d = _0x5b8ee5.find(_0x3b5e74 => _0x3b5e74.startsWith(_0x307bb6));
        if (_0x56275d) {
@@ -2088,7 +2089,7 @@ smd(
            _0xb75e78.error(_0x3de0e2 + "\n\nCommand yts Listener", _0x3de0e2, "*Video Not Found!*");
          }
        }
-     } else if (_0x5b8ee5[0].includes("ᴀsᴛᴀ-ᴍᴅ • ᴀᴘᴋ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪsᴛ")) {
+     } else if (_0x5b8ee5[0].includes("Yuta-Md • ᴀᴘᴋ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪsᴛ")) {
        let _0x35d668 = "*" + _0xb75e78.text.split(" ")[0] + " : ";
        const _0x205a5f = _0x5b8ee5.find(_0x304058 => _0x304058.startsWith(_0x35d668));
        if (_0x205a5f) {
