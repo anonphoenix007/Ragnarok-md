@@ -94,7 +94,7 @@ smd(
         return await _0xd700b1.send(
           "*_provide text to update profile status!_*\n*_Example: " +
             prefix +
-            "bio Asta Md_*"
+            "bio Yuta-Md bot_*"
         );
       }
       await _0xd700b1.bot.updateProfileStatus(_0xb45f41);
@@ -564,7 +564,7 @@ cmd(
     desc: "download viewOnce Message.",
     category: "whatsapp",
     use: "<query>",
-    react: "🫦",
+    react: "🦄",
     filename: __filename,
   },
   async (_0x5e331d, _0x237d8a) => {
