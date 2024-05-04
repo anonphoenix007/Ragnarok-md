@@ -264,7 +264,7 @@ astro_patch.smd(
         Config.menu.toLowerCase().includes("menu1")
       ) {
         menuThemeHeader = "╭═══ *YUTA-MD* ═══⊷\n┃❃╭──────────────";
-        menuThemeCommandPrefix = "┃❃│";
+        menuThemeCommandPrefix = "│";
         menuThemeFooter = "┃❃╰───────────────\n╰═════════════════⊷";
         menuThemeCategoryHeader = "╭─❏";
         menuThemeCategoryFooter = "❏";
@@ -276,7 +276,7 @@ astro_patch.smd(
         Config.menu.toLowerCase().includes("menu2")
       ) {
         menuThemeHeader = "╭═══ *YUTA-MD* ═══⊷\n┃❃╭──────────────";
-        menuThemeCommandPrefix = "┃❃│";
+        menuThemeCommandPrefix = "│";
         menuThemeFooter = "┃❃╰───────────────\n╰═════════════════⊷";
         menuThemeCategoryHeader = "╭─❏";
         menuThemeCategoryFooter = "❏";
@@ -284,7 +284,7 @@ astro_patch.smd(
         menuThemeCommandFooter = "╰───────────────── ";
       } else {
         menuThemeHeader = "╭═══ *YUTA-MD* ═══⊷\n┃❃╭──────────────";
-        menuThemeCommandPrefix = "┃❃│";
+        menuThemeCommandPrefix = "│";
         menuThemeFooter = "┃❃╰───────────────\n╰═════════════════⊷";
         menuThemeCategoryHeader = "╭─❏";
         menuThemeCategoryFooter = "❏";
@@ -307,19 +307,34 @@ astro_patch.smd(
 
       const currentTime = message.time;
       const currentDate = message.date;
-      let menuText = `
+    /*  let menuText = `
 ${menuThemeHeader}
-${menuThemeCommandPrefix} Prefix: ${Config.HANDLERS}
-${menuThemeCommandPrefix} User: ${Config.ownername}
-${menuThemeCommandPrefix} *ᴛɪᴍᴇ:* ${currentTime}
-${menuThemeCommandPrefix} Day: ;-;
-${menuThemeCommandPrefix} *ᴅᴀᴛᴇ:* ${currentDate}
-${menuThemeCommandPrefix} Version: 1.0.0
-${menuThemeCommandPrefix} Plugins: 300+
-${menuThemeCommandPrefix} Ram: ${formatp(os.totalmem() - os.freemem())} 
-${menuThemeCommandPrefix} Uptime: ${runtime(process.uptime())}
+${menuThemeCommandPrefix} │Prefix: ${Config.HANDLERS}
+${menuThemeCommandPrefix} │User: ${Config.ownername}
+${menuThemeCommandPrefix} │ᴛɪᴍᴇ: ${currentTime}
+${menuThemeCommandPrefix} │Day: ;-;
+${menuThemeCommandPrefix} │ᴅᴀᴛᴇ: ${currentDate}
+${menuThemeCommandPrefix} │Version: 1.0.0
+${menuThemeCommandPrefix} │Plugins: 300+
+${menuThemeCommandPrefix} │Ram: ${formatp(os.totalmem() - os.freemem())} 
+${menuThemeCommandPrefix} │Uptime: ${runtime(process.uptime())}
 ${menuThemeFooter}                         
-`;
+`;*/
+      let menuText = `
+╭═════ Yuta-Md ═════⊷ 
+┃✯╭──────────────
+┃✯│Prefix: ${Config.HANDLERS}
+┃✯│User: ${Config.ownername}
+┃✯│ᴛɪᴍᴇ: ${currentTime}
+┃✯│Day: ;-;
+┃✯│ᴅᴀᴛᴇ: ${currentDate}
+┃✯│Version: 1.0.0
+┃✯│Plugins: 300+
+┃✯│Ram: ${formatp(os.totalmem() - os.freemem())} 
+┃✯│Uptime: ${runtime(process.uptime())}
+┃✯╰───────────────
+╰═════════════════⊷
+      `
 
       for (const category in categorizedCommands) {
         menuText += `
