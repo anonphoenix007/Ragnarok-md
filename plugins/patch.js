@@ -264,32 +264,32 @@ astro_patch.smd(
         Config.menu.toLowerCase().includes("menu1")
       ) {
         menuThemeHeader = "╭═══ *YUTA-MD* ═══⊷\n┃❃╭──────────────";
-        menuThemeCommandPrefix = "│";
+        menuThemeCommandPrefix = "   │";
         menuThemeFooter = "┃❃╰───────────────\n╰═════════════════⊷";
         menuThemeCategoryHeader = "╭─❏";
         menuThemeCategoryFooter = "❏";
-        menuThemeCommandPrefix = "│";
-        menuThemeCommandFooter = "╰───────────────── ";
+        menuThemeCommandPrefix = "   │";
+        menuThemeCommandFooter = "   ╰───────────────── ";
       } else if (
         menuThemeType === 2 ||
         Config.menu.trim().startsWith("2") ||
         Config.menu.toLowerCase().includes("menu2")
       ) {
         menuThemeHeader = "╭═══ *YUTA-MD* ═══⊷\n┃❃╭──────────────";
-        menuThemeCommandPrefix = "│";
+        menuThemeCommandPrefix = "   │";
         menuThemeFooter = "┃❃╰───────────────\n╰═════════════════⊷";
         menuThemeCategoryHeader = "╭─❏";
         menuThemeCategoryFooter = "❏";
-        menuThemeCommandPrefix = "│";
-        menuThemeCommandFooter = "╰───────────────── ";
+        menuThemeCommandPrefix = "   │";
+        menuThemeCommandFooter = "   ╰───────────────── ";
       } else {
         menuThemeHeader = "╭═══ *YUTA-MD* ═══⊷\n┃❃╭──────────────";
-        menuThemeCommandPrefix = "│";
+        menuThemeCommandPrefix = "   │";
         menuThemeFooter = "┃❃╰───────────────\n╰═════════════════⊷";
         menuThemeCategoryHeader = "╭─❏";
         menuThemeCategoryFooter = "❏";
-        menuThemeCommandPrefix = "│";
-        menuThemeCommandFooter = "╰───────────────── ";
+        menuThemeCommandPrefix = "   │";
+        menuThemeCommandFooter = "   ╰───────────────── ";
       }
 
       const categorizedCommands = {};
