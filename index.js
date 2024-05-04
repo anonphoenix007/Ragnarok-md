@@ -2,7 +2,7 @@ const bot = require(__dirname + '/lib/amd')
 const { VERSION } = require(__dirname + '/config')
 
 const start = async () => {
-    Debug.info(`Starting Ragnarok-MD ${VERSION}`)
+    Debug.info(`Starting Yuta-Md ${VERSION}`)
   try {
     await bot.init()
     //bot.logger.info('⏳ Database syncing!')
