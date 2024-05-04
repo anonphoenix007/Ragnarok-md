@@ -6,7 +6,7 @@ const {
 
 
 //---------------------------------------------------------------------------
-smd({
+/*smd({
            cmdname: "delnote",
            type: "notes",
            filename: __filename,
@@ -148,5 +148,5 @@ let txt = `╭───── *『 MONGODB NOTES 』* ───◆
        }else { return await message.reply(`*Invalid action provided, please follow* \n\n${txt}`) ; }
 
    }catch(e){ await message.error(`${e}\n\ncommand: addnote`,e,`*Can't fetch data, Sorry!*`) }
-})
+})*/
 
