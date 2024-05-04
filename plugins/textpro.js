@@ -57,7 +57,7 @@ smd(
   async (message, match, { cmdName }) => {
     try {
       if (!match)
-        return message.reply(`*_Example : ${prefix + cmdName} Astro_*`);
+        return message.reply(`*_Example : ${prefix + cmdName} Yuta-Md_*`);
       await require(lib_dir).textToLogoGenerator(
         message,
         "hieu-ung-chu/tao-hieu-ung-chu-mam-anh-sang-74",
@@ -81,7 +81,7 @@ smd(
   async (message, match, { cmdName }) => {
     try {
       if (!match)
-        return message.reply(`*_Example : ${prefix + cmdName} Astro_*`);
+        return message.reply(`*_Example : ${prefix + cmdName} Yuta-Md_*`);
       return await textToLogoGenerator(
         message,
         "tao-hieu-ung-chu-digital-glitch-truc-tuyen-941",
@@ -105,7 +105,7 @@ smd(
   async (message, match, { cmdName }) => {
     try {
       if (!match)
-        return message.reply(`*_Example : ${prefix + cmdName} Astro_*`);
+        return message.reply(`*_Example : ${prefix + cmdName} Yuta-Md_*`);
       return await textToLogoGenerator(
         message,
         "tao-hieu-ung-chu-pixel-glitch-truc-tuyen-940",
@@ -130,7 +130,7 @@ smd(
   async (message, match, { cmdName }) => {
     try {
       if (!match)
-        return message.reply(`*_Example : ${prefix + cmdName} Astro_*`);
+        return message.reply(`*_Example : ${prefix + cmdName} Yuta-Md_*`);
       return await textToLogoGenerator(
         message,
         "tao-hieu-ung-chu-graffiti-duong-pho-an-tuong-online-795",
@@ -155,7 +155,7 @@ smd(
   async (message, match, { cmdName }) => {
     try {
       if (!match)
-        return message.reply(`*_Example : ${prefix + cmdName} Astro_*`);
+        return message.reply(`*_Example : ${prefix + cmdName} Yuta-Md_*`);
       return await textToLogoGenerator(
         message,
         "hieu-ung-chu/chu-graffiti-online-mau-8-182",
@@ -387,7 +387,7 @@ smd({
    }) => {
      try {
        if (!_0x4f77c0) {
-         return _0x24125a.reply("*_Example : " + (prefix + _0x2d0eda) + " Astro_*");
+         return _0x24125a.reply("*_Example : " + (prefix + _0x2d0eda) + " Yuta-Md_*");
        }
        return await textToLogoGenerator(_0x24125a, "create-3d-deep-sea-metal-text-effect-online-1053", _0x4f77c0);
      } catch (_0x82c892) {
@@ -404,7 +404,7 @@ smd({
    }) => {
      try {
        if (!_0x4b2154) {
-         return _0x22e0c1.reply("*_Example : " + (prefix + _0x3f34e1) + " Astro_*");
+         return _0x22e0c1.reply("*_Example : " + (prefix + _0x3f34e1) + " Yuta-Md_*");
        }
        return await textToLogoGenerator(_0x22e0c1, "horror-blood-text-effect-online-883", _0x4b2154);
      } catch (_0x327e65) {
@@ -421,7 +421,7 @@ smd({
    }) => {
      try {
        if (!_0x1d8c69) {
-         return _0x42806c.reply("*_Example : " + (prefix + _0x20d4b4) + " Astro_*");
+         return _0x42806c.reply("*_Example : " + (prefix + _0x20d4b4) + " Yuta-Md_*");
        }
        return await textToLogoGenerator(_0x42806c, "online-black-and-white-bear-mascot-logo-creation-1012", _0x1d8c69);
      } catch (_0x2e7f76) {
@@ -438,7 +438,7 @@ smd({
    }) => {
      try {
        if (!_0x216b18) {
-         return _0x25bc1d.reply("*_Example : " + (prefix + _0x67b214) + " Astro_*");
+         return _0x25bc1d.reply("*_Example : " + (prefix + _0x67b214) + " Yuta-Md_*");
        }
        return await textToLogoGenerator(_0x25bc1d, "create-logo-joker-online-934", _0x216b18);
      } catch (_0x4906be) {
@@ -472,7 +472,7 @@ smd({
    }) => {
      try {
        if (!match) {
-         return _0x287ddf.reply("*_Example : " + (prefix + _0x23d32d) + " Astro_*");
+         return _0x287ddf.reply("*_Example : " + (prefix + _0x23d32d) + " Yuta-Md_*");
        }
        return await textToLogoGenerator(_0x287ddf, "steel-text-effect-online-921", match);
      } catch (_0x2017d3) {
@@ -489,7 +489,7 @@ smd({
    }) => {
      try {
        if (!_0x217edf) {
-         return _0x1658cc.reply("*_Example : " + (prefix + _0x1f1d94) + " Astro_*");
+         return _0x1658cc.reply("*_Example : " + (prefix + _0x1f1d94) + " Yuta-Md_*");
        }
        return await textToLogoGenerator(_0x1658cc, "create-harry-potter-text-effect-online-1025", _0x217edf);
      } catch (_0x5a7364) {
@@ -506,7 +506,7 @@ smd({
    }) => {
      try {
        if (!_0x2be604) {
-         return _0x4db464.reply("*_Example : " + (prefix + _0x46bb33) + " Astro_*");
+         return _0x4db464.reply("*_Example : " + (prefix + _0x46bb33) + " Yuta-Md_*");
        }
        return await textToLogoGenerator(_0x4db464, "3d-underwater-text-effect-generator-online-1013", _0x2be604);
      } catch (_0x3a28cb) {
@@ -523,7 +523,7 @@ smd({
    }) => {
      try {
        if (!_0x2e2993) {
-         return _0x507353.reply("*_Example : " + (prefix + _0x4b0f74) + " Astro_*");
+         return _0x507353.reply("*_Example : " + (prefix + _0x4b0f74) + " Yuta-Md_*");
        }
        return await textToLogoGenerator(_0x507353, "3d-luxury-gold-text-effect-online-1003", _0x2e2993);
      } catch (_0x518394) {
@@ -540,7 +540,7 @@ smd({
    }) => {
      try {
        if (!_0x9fed0e) {
-         return _0x106fc0.reply("*_Example : " + (prefix + _0x5b5c5c) + " Astro_*");
+         return _0x106fc0.reply("*_Example : " + (prefix + _0x5b5c5c) + " Yuta-Md_*");
        }
        return await textToLogoGenerator(_0x106fc0, "create-3d-glue-text-effect-with-realistic-style-986", _0x9fed0e);
      } catch (_0x266ed5) {
@@ -557,7 +557,7 @@ smd({
    }) => {
      try {
        if (!_0x54dc94) {
-         return _0x2c5e4d.reply("*_Example : " + (prefix + _0x201030) + " Astro_*");
+         return _0x2c5e4d.reply("*_Example : " + (prefix + _0x201030) + " Yuta-Md_*");
        }
        return await textToLogoGenerator(_0x2c5e4d, "fabric-text-effect-online-964", _0x54dc94);
      } catch (_0xee07bf) {
@@ -574,7 +574,7 @@ smd({
    }) => {
      try {
        if (!_0x1daf45) {
-         return _0xb24628.reply("*_Example : " + (prefix + _0x317c2e) + " Astro_*");
+         return _0xb24628.reply("*_Example : " + (prefix + _0x317c2e) + " Yuta-Md_*");
        }
        return await textToLogoGenerator(_0xb24628, "toxic-text-effect-online-901", _0x1daf45);
      } catch (_0x2a3ccf) {
@@ -591,7 +591,7 @@ smd({
    }) => {
      try {
        if (!_0x2712a3) {
-         return _0x19ea9c.reply("*_Example : " + (prefix + _0x3da883) + " Astro_*");
+         return _0x19ea9c.reply("*_Example : " + (prefix + _0x3da883) + " Yuta-Md_*");
        }
        return await textToLogoGenerator(_0x19ea9c, "3d-golden-ancient-text-effect-online-free-1060", _0x2712a3);
      } catch (_0x34eacf) {
@@ -608,7 +608,7 @@ smd({
    }) => {
      try {
        if (!_0x4759ef) {
-         return _0x3580cc.reply("*_Example : " + (prefix + _0x25c70f) + " Astro_*");
+         return _0x3580cc.reply("*_Example : " + (prefix + _0x25c70f) + " Yuta-Md_ *");
        }
        return await textToLogoGenerator(_0x3580cc, "create-a-cloud-text-effect-on-the-sky-online-1004", _0x4759ef);
      } catch (_0xf4188b) {
@@ -625,7 +625,7 @@ smd({
    }) => {
      try {
        if (!_0x550c65) {
-         return _0x33543a.reply("*_Example : " + (prefix + _0x5932cf) + " Astro_*");
+         return _0x33543a.reply("*_Example : " + (prefix + _0x5932cf) + " Yuta-Md_*");
        }
        return await textToLogoGenerator(_0x33543a, "create-a-transformer-text-effect-online-1035", _0x550c65);
      } catch (_0x1cc1e5) {
@@ -642,7 +642,7 @@ smd({
    }) => {
      try {
        if (!_0x30ff16) {
-         return _0x177d36.reply("*_Example : " + (prefix + _0x51912b) + " Astro_*");
+         return _0x177d36.reply("*_Example : " + (prefix + _0x51912b) + " Yuta-Md_*");
        }
        return await textToLogoGenerator(_0x177d36, "online-thunder-text-effect-generator-1031", _0x30ff16);
      } catch (_0x40c4a4) {
@@ -659,14 +659,14 @@ smd({
    }) => {
      try {
        if (!_0x2049f9) {
-         return _0x1c1874.reply("*_Example : " + (prefix + _0x5462f4) + " Astro_*");
+         return _0x1c1874.reply("*_Example : " + (prefix + _0x5462f4) + " Yuta-Md_*");
        }
        return await textToLogoGenerator(_0x1c1874, "create-3d-sci-fi-text-effect-online-1050", _0x2049f9);
      } catch (_0x3c5966) {
        return await _0x1c1874.error(_0x3c5966 + "\n\ncmdName: " + _0x5462f4, _0x3c5966);
      }
    });
-   smd({
+   /*smd({
      cmdname: "sand",
      type: "deepsea",
      info: "Some text to image feature with various styles.",
@@ -835,5 +835,5 @@ smd({
      } catch (_0x1ff89b) {
        return await _0x20b5a4.error(_0x1ff89b + "\n\ncmdName: " + _0x3f5e61, _0x1ff89b);
      }
-   });
+   });*/
    
