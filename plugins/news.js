@@ -2,7 +2,7 @@ let { smd } = require("../lib");
 const axios = require("axios");
 const fetch = require("node-fetch");
 
-smd(
+/*smd(
   {
     pattern: "wanews",
     alias: ["wa"],
@@ -96,7 +96,7 @@ smd(
       );
     }
   }
-);
+);*/
 
 smd(
   {
@@ -217,7 +217,7 @@ smd(
     }
   }
 );
-smd(
+/*smd(
   {
     pattern: "population",
     desc: "Fetches current population statistics.",
@@ -252,7 +252,7 @@ smd(
       await m.error(`${e}\n\ncommand: population`, e);
     }
   }
-);
+);*/
 smd(
   {
     pattern: "animesearch",
@@ -299,7 +299,7 @@ ${anime.description}
     }
   }
 );
-smd({
+/*smd({
   pattern: 'nasanews',
   fromMe: false,
   desc: 'Get the latest NASA news',
@@ -322,4 +322,4 @@ smd({
       console.error('Error fetching NASA news:', error);
       await message.send('_Failed to fetch NASA news._', { quoted: message.data });
   }
-});
+});*/
