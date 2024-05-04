@@ -1,6 +1,6 @@
 const { smd, send } = require("../lib");
 const fetch = require("node-fetch");
-smd(
+/*smd(
   {
     pattern: "forex1",
     category: "forex",
@@ -190,4 +190,4 @@ smd(
       return message.error(error, "*Failed to fetch stock tickers.*");
     }
   }
-);
+);*/
