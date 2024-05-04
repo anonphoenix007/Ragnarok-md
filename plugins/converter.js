@@ -54,7 +54,7 @@ smd({
     if (_0x4a2c9b && mtypes.includes(_0x4a2c9b?.mtype || "need_Media")) {
       let _0x313fc1 = await _0x4a2c9b.download();
       let _0x37d0ee = {
-        pack: Config.packname,
+        pack: "Yuta-Md",
         author: Config.author,
         type: StickerTypes.FULL,
         quality: 10
