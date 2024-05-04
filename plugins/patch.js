@@ -348,13 +348,13 @@ ${menuThemeFooter}
           menuText += `${menuThemeCommandFooter}\n`;
         }
       }
-      menuText += Config.caption;
+      //menuText += Config.caption;
 
       const messageOptions = {
         caption: menuText
       };
-      return await Void.sendMessage(message.chat, menuText);
-      //return await _0x5d887.reply(messageText)
+      //return await Void.sendMessage(message.chat, menuText);
+      return await _0x5d887.send(messageText)
     } catch (error) {
       await message.error(error + "\nCommand: menu", error);
     }
