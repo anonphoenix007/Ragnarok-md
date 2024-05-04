@@ -203,7 +203,7 @@ astro_patch.smd(
   {
     cmdname: "menu",
     desc: "Help list",
-    react: "📃",
+    react: "🥵",
     desc: "To show all avaiable commands.",
     type: "user",
     filename: __filename,
@@ -263,33 +263,33 @@ astro_patch.smd(
         Config.menu.trim().startsWith("1") ||
         Config.menu.toLowerCase().includes("menu1")
       ) {
-        menuThemeHeader = "╭━━━〔 *" + Config.botname + "* 〕━━━┈⊷";
-        menuThemeCommandPrefix = "┃✵│";
-        menuThemeFooter = "┃✵╰──────────────\n╰━━━━━━━━━━━━━━━┈⊷";
-        menuThemeCategoryHeader = "╭─────────────┈⊷\n│「";
-        menuThemeCategoryFooter = "」\n╰┬────────────┈⊷";
-        menuThemeCommandPrefix = "││◦➛";
-        menuThemeCommandFooter = "│╰────────────┈⊷\n╰─────────────┈⊷";
+        menuThemeHeader = "╭═══ *YUTA-MD* ═══⊷\n┃❃╭──────────────";
+        menuThemeCommandPrefix = "┃❃│";
+        menuThemeFooter = "┃❃╰───────────────\n╰═════════════════⊷";
+        menuThemeCategoryHeader = "╭─❏";
+        menuThemeCategoryFooter = "❏";
+        menuThemeCommandPrefix = "│";
+        menuThemeCommandFooter = "╰───────────────── ";
       } else if (
         menuThemeType === 2 ||
         Config.menu.trim().startsWith("2") ||
         Config.menu.toLowerCase().includes("menu2")
       ) {
-        menuThemeHeader = "╭═══ *" + Config.botname + "* ═══⊷\n┃❃╭──────────────";
+        menuThemeHeader = "╭═══ *YUTA-MD* ═══⊷\n┃❃╭──────────────";
         menuThemeCommandPrefix = "┃❃│";
         menuThemeFooter = "┃❃╰───────────────\n╰═════════════════⊷";
         menuThemeCategoryHeader = "╭─❏";
         menuThemeCategoryFooter = "❏";
-        menuThemeCommandPrefix = "┃❃│";
-        menuThemeCommandFooter = "┃❃╰───────────────\n╰═════════════════⊷";
-      } else {
-        menuThemeHeader = "╭〘  " + Config.botname + "  〙";
-        menuThemeCommandPrefix = "│ │";
-        menuThemeFooter = "╰═══════════════⊷";
-        menuThemeCategoryHeader = "╭─❍";
-        menuThemeCategoryFooter = "══⊷❍";
         menuThemeCommandPrefix = "│";
-        menuThemeCommandFooter = "╰════════════─⊷";
+        menuThemeCommandFooter = "╰───────────────── ";
+      } else {
+        menuThemeHeader = "╭═══ *YUTA-MD* ═══⊷\n┃❃╭──────────────";
+        menuThemeCommandPrefix = "┃❃│";
+        menuThemeFooter = "┃❃╰───────────────\n╰═════════════════⊷";
+        menuThemeCategoryHeader = "╭─❏";
+        menuThemeCategoryFooter = "❏";
+        menuThemeCommandPrefix = "│";
+        menuThemeCommandFooter = "╰───────────────── ";
       }
 
       const categorizedCommands = {};
@@ -309,17 +309,17 @@ astro_patch.smd(
       const currentDate = message.date;
       let menuText = `
 ${menuThemeHeader}
-${menuThemeCommandPrefix} *ᴏᴡɴᴇʀ:* ${Config.ownername}
-${menuThemeCommandPrefix} *ᴜᴘᴛɪᴍᴇ:* ${runtime(process.uptime())}
-${menuThemeCommandPrefix} *ʀᴀᴍ ᴜsᴀɢᴇ:* ${formatp(os.totalmem() - os.freemem())}
+${menuThemeCommandPrefix} Prefix: ${CONFIG.HANDLERS}
+${menuThemeCommandPrefix} User: ${citel.pushName}
 ${menuThemeCommandPrefix} *ᴛɪᴍᴇ:* ${currentTime}
+${menuThemeCommandPrefix} Day: ;-;
 ${menuThemeCommandPrefix} *ᴅᴀᴛᴇ:* ${currentDate}
-${menuThemeCommandPrefix} *ᴄᴏᴍᴍᴀɴᴅs:* ${commands.length}
-${menuThemeCommandPrefix} *ᴜsᴀɢᴇ ᴛʀᴇɴᴅ:* ${trend_usage}
-${menuThemeCommandPrefix} *ᴅᴀᴛᴀʙᴀsᴇ:* ${database_info}
+${menuThemeCommandPrefix} Version: 1.0.0
+${menuThemeCommandPrefix} Plugins: 300+
+${menuThemeCommandPrefix} Ram: ${formatp(os.totalmem() - os.freemem())} 
+${menuThemeCommandPrefix} Uptime: ${runtime(process.uptime())}
 ${menuThemeFooter}                         
-*ᴀsᴛᴀ ᴘᴀᴛᴄʜ 𝟸.5.𝟶*
-${readmore}`;
+`;
 
       for (const category in categorizedCommands) {
         menuText += `
@@ -331,7 +331,7 @@ ${readmore}`;
             category
           )}* ${menuThemeCategoryFooter}\n`;
           for (const command of categorizedCommands[category]) {
-            menuText += `${menuThemeCommandPrefix} ${Config.HANDLERS} ${tiny(
+            menuText += `${menuThemeCommandPrefix} ${tiny(
               command,
               1
             )}\n`;
@@ -340,7 +340,7 @@ ${readmore}`;
           break;
         } else {
           for (const command of categorizedCommands[category]) {
-            menuText += `${menuThemeCommandPrefix} ${Config.HANDLERS} ${tiny(
+            menuText += `${menuThemeCommandPrefix} ${tiny(
               command,
               1
             )}\n`;
@@ -354,13 +354,13 @@ ${readmore}`;
         caption: menuText,
         ephemeralExpiration: 30,
       };
-      return await message.sendUi(message.chat, messageOptions, message);
+      return await message.send(message.chat, message);
     } catch (error) {
       await message.error(error + "\nCommand: menu", error);
     }
   }
 );
-smd(
+/*smd(
   {
     pattern: "menus",
     type: "MENU list",
@@ -395,7 +395,7 @@ smd(
       await _0x22514a.error(_0x450fce + "\nCommand:menus", _0x450fce);
     }
   }
-);
+);*/
 astro_patch.cmd(
   {
     pattern: "setcmd",
@@ -536,7 +536,7 @@ astro_patch.smd(
   },
   async (context) => {
     const startTime = new Date().getTime();
-    const { key: messageKey } = await context.reply("*hmm...*");
+    const { key: messageKey } = await context.reply("*Checking Ping..*");
     const endTime = new Date().getTime();
     const pingTime = endTime - startTime;
     await context.send(
@@ -561,7 +561,7 @@ smd(
       const designs = [
         async () => {
           const imageBuffer = await axios.get(
-            "https://i.imgur.com/z20pSwu.jpeg",
+            "https://telegra.ph/file/2f30334adc87517e435c1.png",
             {
               responseType: "arraybuffer",
             }
@@ -578,13 +578,13 @@ smd(
           const quoteText = `\n\n*"${quote.result.body}"*\n_- ${quote.result.author}_`;
           const end = new Date().getTime();
           const pingSeconds = (end - start) / 1000;
-          const captionText = `ᴀsᴛᴀ ᴍᴅ 𝟸.𝟶.𝟶 ᴘᴀᴛᴄʜ\n\n*Ping:* ${pingSeconds} seconds${quoteText}\n\nᴀsᴛᴀ ᴍᴅ`;
+          const captionText = `Yuta-Md\n\n*Speed:* ${pingSeconds} seconds`;
 
           return { image: imageBuffer.data, caption: captionText };
         },
         async () => {
           const imageBuffer = await axios.get(
-            "https://i.imgur.com/lIo3cM2.jpeg",
+            "https://telegra.ph/file/2f30334adc87517e435c1.png",
             {
               responseType: "arraybuffer",
             }
@@ -600,13 +600,13 @@ smd(
 
           const end = new Date().getTime();
           const pingSeconds = (end - start) / 1000;
-          const captionText = `ᴀsᴛᴀ ᴍᴅ 𝟸.𝟶.𝟶 ᴘᴀᴛᴄʜ\n\n*Ping:* ${pingSeconds} seconds\n\n*Fact:*\n${fact.result.fact}\n\nᴀsᴛᴀ ᴍᴅ`;
+          const captionText = `Yuta-Md\n\n*Speed:* ${pingSeconds} seconds`;
 
           return { image: imageBuffer.data, caption: captionText };
         },
         async () => {
           const imageBuffer = await axios.get(
-            "https://i.imgur.com/OQOH4Gn.jpeg",
+            "https://telegra.ph/file/2f30334adc87517e435c1.png",
             {
               responseType: "arraybuffer",
             }
@@ -622,7 +622,7 @@ smd(
 
           const end = new Date().getTime();
           const pingSeconds = (end - start) / 1000;
-          const captionText = `ᴀsᴛᴀ ᴍᴅ 𝟸.𝟶.𝟶 ᴘᴀᴛᴄʜ\n\n*Ping:* ${pingSeconds} seconds\n\n*Line:*\n${line.result}\n\nᴀsᴛᴀ ᴍᴅ`;
+          const captionText = `Yuta-Md\n\n*Speed:* ${pingSeconds} seconds`;
 
           return { image: imageBuffer.data, caption: captionText };
         },
@@ -669,13 +669,13 @@ smd(
 
       const ramUsage = process.memoryUsage().heapTotal / 1024 / 1024;
 
-      const message = `*ᴀsᴛᴀ ᴍᴅ ʀᴜɴɴɪɴɢ sɪɴᴄᴇ:* ${uptimeHours}h ${uptimeMinutes}ᴍ ${uptimeSeconds}s\n \t_ʜᴇʀᴇ's ᴍᴏʀᴇ ɪɴғᴏ_\n*ʀᴀᴍ ᴜsᴀɢᴇ:* ${ramUsage.toFixed(2)} MB\n*ᴄᴘᴜ ɴᴀᴍᴇ:* ${cpuModel}`;
+      const message = `*Yuta-Md alive sɪɴᴄᴇ:* ${uptimeHours}h ${uptimeMinutes}ᴍ ${uptimeSeconds}s\n \t_ʜᴇʀᴇ's ᴍᴏʀᴇ ɪɴғᴏ_\n*ʀᴀᴍ ᴜsᴀɢᴇ:* ${ramUsage.toFixed(2)} MB\n*ᴄᴘᴜ ɴᴀᴍᴇ:* ${cpuModel}`;
       const contextInfo = {
-        isForwarded: true,
-        forwardingScore: 999,
-        title: "Asta MD Running Since",
+        isForwarded: false,
+        //forwardingScore: 999,
+        title: "Yuta-Md alive Since",
         body: message,
-        footerText: "Asta MD 2024",
+        footerText: "Yuta-Md",
         isSendNotificationMsg: true,
         mentionedJid: [],
       };
@@ -686,7 +686,7 @@ smd(
     }
   }
 );
-astro_patch.cmd({
+/*astro_patch.cmd({
     pattern: "list",
     desc: "list menu",
     category: "general",
@@ -710,7 +710,7 @@ astro_patch.cmd({
     } catch (_0x3e730d) {
       await _0x1d5ddc.error(_0x3e730d + "\nCommand:list", _0x3e730d);
     }
-  });
+  });*/
 astro_patch.smd(
   {
     pattern: "owner",
@@ -1287,7 +1287,7 @@ smd(
           let resultTest = await eval(
             "const a = async()=>{\n" + code + _0xd6a12a(456)
           );
-          await citel[_0xd6a12a(461)]("🍁");
+          await citel[_0xd6a12a(461)]("✅");
           if (resultTest) {
             return await citel.reply(util[_0xd6a12a(470)](resultTest));
           }
