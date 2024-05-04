@@ -354,7 +354,7 @@ ${menuThemeFooter}
         caption: menuText
       };
       //return await Void.sendMessage(message.chat, menuText);
-      return await asta_bot.sendMessage(menuText)
+      return await message.send(message.chat, menuText)
     } catch (error) {
       await message.error(error + "\nCommand: menu", error);
     }
