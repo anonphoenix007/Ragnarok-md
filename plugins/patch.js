@@ -310,7 +310,7 @@ astro_patch.smd(
       let menuText = `
 ${menuThemeHeader}
 ${menuThemeCommandPrefix} Prefix: ${Config.HANDLERS}
-${menuThemeCommandPrefix} User: ${citel.pushName}
+${menuThemeCommandPrefix} User: ${Config.ownername}
 ${menuThemeCommandPrefix} *ᴛɪᴍᴇ:* ${currentTime}
 ${menuThemeCommandPrefix} Day: ;-;
 ${menuThemeCommandPrefix} *ᴅᴀᴛᴇ:* ${currentDate}
