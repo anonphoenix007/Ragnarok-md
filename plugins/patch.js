@@ -354,7 +354,8 @@ ${menuThemeFooter}
         caption: menuText,
         ephemeralExpiration: 30,
       };
-      return await message.send(message.chat, message);
+      return await m.bot.sendMessage(message.chat, menuText);
+      //return await _0x5d887.reply(messageText)
     } catch (error) {
       await message.error(error + "\nCommand: menu", error);
     }
