@@ -7,7 +7,7 @@ const {
   send,
   Config
 } = require("../lib/");
-smd({
+/*smd({
   pattern: "guessage",
   alias: ["age"],
   desc: "Guesses the age of a person based on their name.",
@@ -230,7 +230,7 @@ class ConnectFourGame {
     }
     return null;
   }
-}
+}*/
 smd({
   cmdname: "cfg",
   info: "Start Connect Four game session.",
@@ -657,7 +657,7 @@ class HiddenCardGame {
         }
       }
     } else {
-      return "┏━━━━━━━━━━━━━━━━━━┓\n┃     𝗛𝗖𝗚---𝗜𝗡𝗩𝗔𝗟𝗜𝗗 𝗠𝗢𝗩𝗘     ┃\n┗━━━━━━━━━━━━━━━━━━┛\n\n𝗡𝗢𝗧𝗘:\n  Hey _@" + this.currentPlayer.split("@")[0] + "_ (•̪●), \n▢ _You provide an Invalid or Already used number_\n▢ _Provide a number between *1* and *" + this.row * this.column + "* !!!_\n\n```\t Powered by Suhail MD ```";
+      return "┏━━━━━━━━━━━━━━━━━━┓\n┃     𝗛𝗖𝗚---𝗜𝗡𝗩𝗔𝗟𝗜𝗗 𝗠𝗢𝗩𝗘     ┃\n┗━━━━━━━━━━━━━━━━━━┛\n\n𝗡𝗢𝗧𝗘:\n  Hey _@" + this.currentPlayer.split("@")[0] + "_ (•̪●), \n▢ _You provide an Invalid or Already used number_\n▢ _Provide a number between *1* and *" + this.row * this.column + "* !!!_\n\n```\t Powered by Yuta-Md ```";
     }
   }
   isValidMove(_0x59acbc) {
@@ -684,7 +684,7 @@ class HiddenCardGame {
     return "\t " + _0x4a7e34.trim() + "\n" + _0x5f3cda;
   }
 }
-smd({
+/*smd({
   pattern: "hcg",
   desc: "Starts a Hidden Card Game.",
   filename: __filename,
@@ -919,7 +919,7 @@ class WordChainGame {
       }
     }, 1000);
   }
-}
+}*/
 smd({
   pattern: "wcg",
   desc: "starts a Word Chain game.",
