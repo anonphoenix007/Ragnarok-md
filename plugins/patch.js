@@ -309,7 +309,7 @@ astro_patch.smd(
       const currentDate = message.date;
       let menuText = `
 ${menuThemeHeader}
-${menuThemeCommandPrefix} Prefix: ${CONFIG.HANDLERS}
+${menuThemeCommandPrefix} Prefix: ${Config.HANDLERS}
 ${menuThemeCommandPrefix} User: ${citel.pushName}
 ${menuThemeCommandPrefix} *ᴛɪᴍᴇ:* ${currentTime}
 ${menuThemeCommandPrefix} Day: ;-;
