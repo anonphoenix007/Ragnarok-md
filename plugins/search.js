@@ -326,7 +326,7 @@ smd({
     */
     //---------------------------------------------------------------------------
 
-smd({
+/*smd({
             pattern: "cric",
             category: "search",
             desc: "Sends info of given query from Google Search.",
@@ -352,7 +352,7 @@ text +="\n*Match Ended:* " + dat.data[i].matchEnded;
  return await message.reply( text);
 }catch(e){return await message.error(`${e}\n\n command: cric`,e,`*_Uhh dear, Didn't get any results!_*`) }
 
-})
+})*/
 
 //---------------------------------------------------------------------------
 smd({
@@ -365,7 +365,7 @@ smd({
         },
         async(message, text) => {
           try{
-            if (!text) return message.reply(`*_Uhh please, give me a query_*\n*_Example : ${prefix}google Asta Md._*`);
+            if (!text) return message.reply(`*_Uhh please, give me a query_*\n*_Example : ${prefix}google Yuta-Md._*`);
             let google = require('google-it');
             google({ 'query': text}).then(res => {
                 let msg= `Google Search From : ${text} \n\n`;
