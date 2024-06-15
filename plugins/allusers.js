@@ -485,13 +485,29 @@ smd({
     filename: __filename
 }, async _0x45da98 => {
     try {
-        let {
+        /*let {
             data: _0x44f98c
-        } = await axios.get("https://api.github.com/repos/Emperordagoat2/asta");
-        let _0x1c73f9 = ("\nSimple WhatsApp Bot By Emperor Team.* Used By" + Config.ownername + "*.\n\n  *❲❒❳ Stars:* " + (_0x44f98c?.stargazers_count || "120+") + " stars\n  *❲❒❳ Forks:* " + (_0x44f98c?.forks_count || "500+") + " forks\n  *❲❒❳ Creator:* Astropeda\n  *❲❒❳ Created:* " + (_0x44f98c?.created_at || "Unknown") + "\n  *❲❒❳ Repo:* _https://github.com/Astropeda/Asta-Md_\n" + (Config.caption ? "\n\n" + Config.caption : "")).trim();
-        return await _0x45da98.sendUi(_0x45da98.jid, {
-            caption: _0x1c73f9
-        });
+        } = await axios.get("https://api.github.com/repos/Emperordagoat2/asta");*/
+        let { data } = await axios.get('https://api.github.com/repos/Kai0071/Taira');
+        teks = `*Asta-Md REPO Script*\n\n*❲❒❳ Creator:* Emperordagoat2\n*❲❒❳ Repo Stars*: ${data.stargazers_count}⭐\n*❲❒❳ Repo Forks*: ${data.forks_count} forks\n*❲❒❳ Repo link*: https://github.com/Emperordagoat2/Asta\n\n` 
+        //let _0x1c73f9 = ("\nSimple WhatsApp Bot By Astropeda Team.* Used By" + Config.ownername + "*.\n\n  *❲❒❳ Stars:* " + (_0x44f98c?.stargazers_count || "120+") + " stars\n  *❲❒❳ Forks:* " + (_0x44f98c?.forks_count || "500+") + " forks\n  *❲❒❳ Creator:* Astropeda\n  *❲❒❳ Created:* " + (_0x44f98c?.created_at || "Unknown") + "\n  *❲❒❳ Repo:* _https://github.com/Astropeda/Asta-Md_\n" + (Config.caption ? "\n\n" + Config.caption : "")).trim();
+        let buttonMessage = {
+          image: { url: "https://telegra.ph/file/fff001dd8ef44024dd0bb.jpg" },
+          jpegThumbnail: { url: "https://telegra.ph/file/fff001dd8ef44024dd0bb.jpg" },
+          caption: teks,
+          contextInfo: {
+            externalAdreply: {
+              title: "Asta-Md",
+              body: " ",
+              thumbnail: { url: "https://telegra.ph/file/fff001dd8ef44024dd0bb.jpg" },
+              mediaType: 1,
+              mediaUrl: 'https://github.com/Emperordagoat2/Asta',
+              sourceUrl: "https://whatsapp.com/channel/0029VaY0Zq32P59piTo5rg0K"
+            }
+          }
+
+        }
+        return await _0x45da98.sendUi(_0x45da98.jid, buttonMessage );
     } catch (_0x5816fe) {
         await _0x45da98.error(_0x5816fe + "\n\ncommand: repo", _0x5816fe);
     }
